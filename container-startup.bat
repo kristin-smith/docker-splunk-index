@@ -1,7 +1,7 @@
 @echo OFF
 SETLOCAL EnableDelayedExpansion
 
-REM Prompt the user for the name of the custom application being tested. This folder holds the /bin and /local directories that make it function
+REM Prompt the user for the name of the custom application being tested. Assumes the custom application is in the folder that this file is being run from. This folder holds the /bin and /local directories that make it function
 set /p "app=Enter the folder name of the custom application you're testing:"
 REM validate the custom application exists in the given directory
 if not exist %~dp0\!app!\ ( 
